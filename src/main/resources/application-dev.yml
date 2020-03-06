@@ -1,0 +1,25 @@
+#开发环境
+spring:
+  datasource:
+    username: root
+    password: xjs55555
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.spyair: debug
+  file:
+    path: log/blog-dev.log
+
+#30分钟清空session
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 1800s

@@ -1,0 +1,5 @@
+2020-01-13 22:33:10.300  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 25864 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-01-13 22:33:10.302  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-01-13 22:33:11.747  WARN 25864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-13 22:33:11.900  WARN 25864 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-01-13 22:33:11.976  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 2.073 seconds (JVM running for 3.175)

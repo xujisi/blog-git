@@ -1,0 +1,315 @@
+2020-02-20 16:40:00.227  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 15324 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 16:40:00.232 DEBUG 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 16:40:00.232  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 16:40:00.283  INFO 15324 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\apache-maven-3.3.9\respository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-20 16:40:00.284  INFO 15324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-20 16:40:00.284  INFO 15324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-20 16:40:01.983  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 16:40:02.097  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 6 JPA repository interfaces.
+2020-02-20 16:40:02.404  INFO 15324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 16:40:03.009  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 16:40:03.018  INFO 15324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 16:40:03.018  INFO 15324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 16:40:03.134  INFO 15324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 16:40:03.135  INFO 15324 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2851 ms
+2020-02-20 16:40:03.370  INFO 15324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 16:40:03.502  INFO 15324 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-02-20 16:40:03.736  INFO 15324 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-20 16:40:03.869  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-20 16:40:04.013  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-20 16:40:04.043  INFO 15324 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 16:40:05.010  INFO 15324 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 16:40:05.020  INFO 15324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 16:40:05.129  INFO 15324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 16:40:06.288  WARN 15324 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 16:40:06.488  INFO 15324 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 16:40:06.629  INFO 15324 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 16:40:08.236  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 16:40:08.238  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 8.758 seconds (JVM running for 10.717)
+2020-02-20 16:40:44.621  INFO 15324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 16:40:44.621  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 16:40:44.632  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-02-20 16:41:30.562  INFO 15324 --- [http-nio-8080-exec-7] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 16:42:34.181  INFO 15324 --- [Thread-17] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-20 16:42:34.182  INFO 15324 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 16:42:34.185  INFO 15324 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-20 16:42:34.190  INFO 15324 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-20 16:42:35.192  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 15324 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 16:42:35.192 DEBUG 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 16:42:35.192  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 16:42:35.382  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 16:42:35.414  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 6 JPA repository interfaces.
+2020-02-20 16:42:35.484  INFO 15324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 16:42:35.581  WARN 15324 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-02-20 16:42:35.660  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 16:42:35.661  INFO 15324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 16:42:35.661  INFO 15324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 16:42:35.738  INFO 15324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 16:42:35.738  INFO 15324 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 543 ms
+2020-02-20 16:42:35.800  INFO 15324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 16:42:35.804  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-20 16:42:35.808  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-20 16:42:35.808  INFO 15324 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 16:42:35.923  INFO 15324 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 16:42:35.923  INFO 15324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 16:42:35.935  INFO 15324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 16:42:36.309  WARN 15324 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 16:42:36.429  INFO 15324 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 16:42:36.469  INFO 15324 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 16:42:36.675  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 16:42:36.676  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 1.523 seconds (JVM running for 159.154)
+2020-02-20 16:42:36.678  INFO 15324 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-20 16:42:38.989  INFO 15324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 16:42:38.990  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 16:42:38.998  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-02-20 16:42:47.100  INFO 15324 --- [http-nio-8080-exec-4] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 16:43:34.864  INFO 15324 --- [Thread-31] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-20 16:43:34.864  INFO 15324 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 16:43:34.866  INFO 15324 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-20 16:43:34.871  INFO 15324 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-20 16:43:35.857  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 15324 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 16:43:35.857 DEBUG 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 16:43:35.857  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 16:43:36.013  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 16:43:36.040  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 6 JPA repository interfaces.
+2020-02-20 16:43:36.079  INFO 15324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 16:43:36.140  WARN 15324 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-02-20 16:43:36.202  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 16:43:36.202  INFO 15324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 16:43:36.202  INFO 15324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 16:43:36.227  INFO 15324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 16:43:36.227  INFO 15324 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 368 ms
+2020-02-20 16:43:36.279  INFO 15324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 16:43:36.282  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-20 16:43:36.286  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-20 16:43:36.286  INFO 15324 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 16:43:36.391  INFO 15324 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 16:43:36.391  INFO 15324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 16:43:36.402  INFO 15324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 16:43:36.763  WARN 15324 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 16:43:36.864  INFO 15324 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 16:43:36.897  INFO 15324 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 16:43:37.091  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 16:43:37.091  INFO 15324 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 1.271 seconds (JVM running for 219.57)
+2020-02-20 16:43:37.092  INFO 15324 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-20 16:43:39.441  INFO 15324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 16:43:39.442  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 16:43:39.450  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-02-20 16:43:46.718  INFO 15324 --- [http-nio-8080-exec-5] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 16:44:13.847  INFO 15324 --- [http-nio-8080-exec-9] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 16:44:25.040  INFO 15324 --- [http-nio-8080-exec-4] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 17:21:58.394  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 18872 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 17:21:58.396 DEBUG 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 17:21:58.396  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 17:21:58.431  INFO 18872 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\apache-maven-3.3.9\respository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-20 17:21:58.432  INFO 18872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-20 17:21:58.432  INFO 18872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-20 17:21:58.927  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 17:21:59.007  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 6 JPA repository interfaces.
+2020-02-20 17:21:59.415  INFO 18872 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 17:21:59.825  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 17:21:59.833  INFO 18872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 17:21:59.833  INFO 18872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 17:21:59.979  INFO 18872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 17:21:59.979  INFO 18872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1547 ms
+2020-02-20 17:22:00.134  INFO 18872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 17:22:00.189  INFO 18872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-02-20 17:22:00.283  INFO 18872 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-20 17:22:00.359  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-20 17:22:00.454  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-20 17:22:00.468  INFO 18872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 17:22:01.127  INFO 18872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 17:22:01.132  INFO 18872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 17:22:01.154  INFO 18872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 17:22:01.882  WARN 18872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 17:22:02.076  INFO 18872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:22:02.319  INFO 18872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 17:22:02.593  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 17:22:02.595  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 4.633 seconds (JVM running for 6.623)
+2020-02-20 17:23:00.791  INFO 18872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 17:23:00.792  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 17:23:00.804  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-20 17:24:24.626  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 17:25:46.219  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 17:26:08.300  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 17:44:38.052  INFO 18872 --- [Thread-12] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:44:38.054  INFO 18872 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 17:44:38.057  INFO 18872 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-20 17:44:38.062  INFO 18872 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-20 17:44:39.095  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 18872 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 17:44:39.095 DEBUG 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 17:44:39.096  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 17:44:39.351  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 17:44:39.387  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 6 JPA repository interfaces.
+2020-02-20 17:44:39.490  INFO 18872 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 17:44:39.585  WARN 18872 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-02-20 17:44:39.658  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 17:44:39.659  INFO 18872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 17:44:39.659  INFO 18872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 17:44:39.695  INFO 18872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 17:44:39.696  INFO 18872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 597 ms
+2020-02-20 17:44:39.776  INFO 18872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 17:44:39.781  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-20 17:44:39.787  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-20 17:44:39.787  INFO 18872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 17:44:39.951  INFO 18872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 17:44:39.951  INFO 18872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 17:44:39.965  INFO 18872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 17:44:40.383  WARN 18872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 17:44:40.552  INFO 18872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:44:40.595  INFO 18872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 17:44:40.803  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 17:44:40.803  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 1.756 seconds (JVM running for 1364.831)
+2020-02-20 17:44:40.805  INFO 18872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-20 17:44:44.787  INFO 18872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 17:44:44.789  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 17:44:44.801  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-02-20 17:45:02.787  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 17:49:24.875  INFO 18872 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:49:24.875  INFO 18872 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 17:49:24.876  INFO 18872 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-20 17:49:24.883  INFO 18872 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-02-20 17:49:25.983  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 18872 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-02-20 17:49:25.983 DEBUG 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-02-20 17:49:25.984  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-02-20 17:49:26.233  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-20 17:49:26.266  INFO 18872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 6 JPA repository interfaces.
+2020-02-20 17:49:26.341  INFO 18872 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-20 17:49:26.429  WARN 18872 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-02-20 17:49:26.504  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-20 17:49:26.505  INFO 18872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-20 17:49:26.505  INFO 18872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-02-20 17:49:26.537  INFO 18872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-20 17:49:26.537  INFO 18872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 551 ms
+2020-02-20 17:49:26.631  INFO 18872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-20 17:49:26.637  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-02-20 17:49:26.640  INFO 18872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-02-20 17:49:26.641  INFO 18872 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-02-20 17:49:26.834  INFO 18872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-20 17:49:26.834  INFO 18872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 17:49:26.849  INFO 18872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-20 17:49:27.406  WARN 18872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-02-20 17:49:27.566  INFO 18872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-20 17:49:27.616  INFO 18872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-20 17:49:27.849  INFO 18872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-20 17:49:27.850  INFO 18872 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 1.909 seconds (JVM running for 1651.877)
+2020-02-20 17:49:27.851  INFO 18872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-20 17:49:33.727  INFO 18872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-20 17:49:33.729  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-20 17:49:33.739  INFO 18872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-02-20 17:49:53.298  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 18:01:37.198  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-20 18:01:37.208  WARN 18872 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-20 18:01:37.216  WARN 18872 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-20 18:01:37.220  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:37.220  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-02-20 18:01:37.588  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:37.592  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:37.592  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:39.702  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-20 18:01:39.712  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:39.712  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :types
+2020-02-20 18:01:39.968  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:39.971  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:39.971  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:41.599  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-20 18:01:41.705  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:41.705  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :tags
+2020-02-20 18:01:41.916  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:41.919  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:41.919  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:43.243  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.ArchivesShowController.archives', args=[{}]}
+2020-02-20 18:01:43.253  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:43.253  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :archives
+2020-02-20 18:01:43.525  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:43.527  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:43.527  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:44.265  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.AboutShowController.About', args=[]}
+2020-02-20 18:01:44.268  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:44.268  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :about
+2020-02-20 18:01:44.437  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:44.441  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:44.441  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:49.067  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.ArchivesShowController.archives', args=[{}]}
+2020-02-20 18:01:49.072  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:49.072  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :archives
+2020-02-20 18:01:49.222  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:49.224  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:49.224  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:49.642  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.AboutShowController.About', args=[]}
+2020-02-20 18:01:49.642  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:49.642  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :about
+2020-02-20 18:01:49.813  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:49.816  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:49.816  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:01:57.209  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-20 18:01:57.217  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:57.217  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-02-20 18:01:57.402  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:01:57.404  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:01:57.405  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:02:01.115  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.AboutShowController.About', args=[]}
+2020-02-20 18:02:01.115  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:01.115  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :about
+2020-02-20 18:02:01.304  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:02:01.307  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:01.307  INFO 18872 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:02:01.945  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.ArchivesShowController.archives', args=[{}]}
+2020-02-20 18:02:01.951  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:01.951  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :archives
+2020-02-20 18:02:02.104  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:02:02.106  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:02.106  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:02:02.373  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-20 18:02:02.379  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:02.379  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :tags
+2020-02-20 18:02:02.555  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:02:02.559  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:02.559  INFO 18872 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:02:03.365  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-20 18:02:03.369  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:03.369  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :types
+2020-02-20 18:02:03.561  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:02:03.564  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:03.564  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:02:04.030  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-20 18:02:04.036  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:04.036  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-02-20 18:02:04.215  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:02:04.217  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:02:04.217  INFO 18872 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:15:48.626  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-20 18:15:48.633  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:15:48.634  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-02-20 18:15:48.870  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:15:48.873  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:15:48.873  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:22:26.271  INFO 18872 --- [http-nio-8080-exec-4] com.spyair.blog.web.IndexController      : 上传成功
+2020-02-20 18:52:17.139  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-20 18:52:17.146  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:17.147  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-02-20 18:52:17.464  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:52:17.467  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:17.467  INFO 18872 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:52:20.629  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/blog/30', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.blog', args=[30, {}]}
+2020-02-20 18:52:20.687  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:20.687  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :blog
+2020-02-20 18:52:21.004  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:52:21.007  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:21.007  INFO 18872 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:52:21.061  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/comments/30', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.CommentConterller.comments', args=[30, {}]}
+2020-02-20 18:52:21.099  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:21.100  INFO 18872 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :blog :: commentList
+2020-02-20 18:52:24.128  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/blog/28', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.blog', args=[28, {}]}
+2020-02-20 18:52:24.137  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:24.138  INFO 18872 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :blog
+2020-02-20 18:52:24.357  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-02-20 18:52:24.360  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:24.360  INFO 18872 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-02-20 18:52:24.405  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/comments/28', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.CommentConterller.comments', args=[28, {}]}
+2020-02-20 18:52:24.407  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-02-20 18:52:24.408  INFO 18872 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :blog :: commentList
+2020-02-20 20:23:14.662  INFO 18872 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-20 20:23:14.663  INFO 18872 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-20 20:23:14.664  INFO 18872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-02-20 20:23:14.672  INFO 18872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
