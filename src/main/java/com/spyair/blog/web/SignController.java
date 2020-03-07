@@ -53,7 +53,7 @@ public class SignController {
 
     //列表查询
     @GetMapping("/sign")
-    public String list(@PageableDefault(size = 8, sort = {"id"}, direction = Sort.Direction.DESC)
+    public String list(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC)
                                Pageable pageable, Model model, HttpSession session, HttpServletRequest request) {
         User user = (User) session.getAttribute("user");
         if (user == null) {
