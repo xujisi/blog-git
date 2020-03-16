@@ -59,43 +59,47 @@
                 <div class="ui left labeled input">
                     <a class="ui teal basic label" href="#" th:href="@{/sign}">查询</a>
                 </div>
-                <table class="ui compact teal table">
-                    <thead>
-                    <tr>
-                        <th></th>
-                        <th>签到日期</th>
-                        <th>名称</th>
-                        <th>操作</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="sign,iterStat : ${page.content}">
-                        <td th:text="${iterStat.count}">1</td>
-                        <td>
-                            <div class="column"><i class="calendar alternate icon"></i><a th:text="${#dates.format(sign.createTime, 'yyyy-MM-dd')}" class="ui mini primary button">签到列表</a></div>
-                        </td>
-                        <td th:if="${#strings.length(sign.content)}<=11" th:text="${sign.content}">内容</td>
-                        <td th:if="${#strings.length(sign.content)}>11" th:text="|${#strings.substring(sign.content,0,10)} ...|">内容</td>
-                        <td>
-                            <a href="#" th:href="@{/sign/{id}/view(id=${sign.id})}" class="ui mini blue basic button">查看</a>
-                            <a href="#" th:href="@{/sign/{id}/input(id=${sign.id})}" class="ui mini teal basic button">编辑</a>
-                            <a href="#" th:href="@{/sign/{id}/delete(id=${sign.id})}" class="ui mini red basic button">删除</a>
-                            <a href="#" th:href="@{/sign/{id}/upload(id=${sign.id})}" class="ui mini orange basic button">上传图片</a>
-                        </td>
-                    </tr>
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <th colspan="6">
-                            <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
-                                <a th:href="@{/sign(page=${page.number}-1)}" class="  item" th:unless="${page.first}">上一页</a>
-                                <a th:href="@{/sign(page=${page.number}+1)}" class=" item" th:unless="${page.last}">下一页</a>
-                            </div>
-                            <a href="#" th:href="@{/sign/input}" class="ui mini right floated teal basic button">签到</a>
-                        </th>
-                    </tr>
-                    </tfoot>
-                </table>
+                <form th:id="form1" th:name="form1">
+                    <table class="ui compact teal table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>签到日期</th>
+                            <th>名称</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="sign,iterStat : ${page.content}">
+                            <td th:text="${iterStat.count}">1</td>
+                            <td>
+                                <div class="column"><i class="calendar alternate icon"></i><a th:text="${#dates.format(sign.createTime, 'yyyy-MM-dd')}" class="ui mini primary button">签到列表</a></div>
+                            </td>
+                            <td th:if="${#strings.length(sign.content)}<=11" th:text="${sign.content}">内容</td>
+                            <td th:if="${#strings.length(sign.content)}>11" th:text="|${#strings.substring(sign.content,0,10)} ...|">内容</td>
+                            <td>
+                                <a href="#" th:href="@{/sign/{id}/view(id=${sign.id})}" class="ui mini blue basic button">查看</a>
+                                <a href="#" th:href="@{/sign/{id}/input(id=${sign.id})}" class="ui mini teal basic button">编辑</a>
+                                <a href="#" th:href="@{/sign/{id}/delete(id=${sign.id})}" class="ui mini red basic button">删除</a>
+                                <a href="#" th:href="@{/sign/{id}/upload(id=${sign.id})}" class="ui mini orange basic button">上传图片</a>
+                            </td>
+                        </tr>
+                        <!--<input th:name="abc" hidden th:value="aca">-->
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th colspan="6">
+                                <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                                    <a th:href="@{/sign(page=${page.number}-1)}" class="  item" th:unless="${page.first}">上一页</a>
+                                    <a th:href="@{/sign(page=${page.number}+1)}" class=" item" th:unless="${page.last}">下一页</a>
+                                </div>
+                                <a href="#" th:href="@{/sign/input}" class="ui mini right floated teal basic button">签到</a>
+                                <!--<a class="ui mini right floated teal basic button" th:id="cs">测试</a>-->
+                            </th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </form>
             </div>
         </div>
 
@@ -166,6 +170,15 @@
                         .closest('.message')
                         .transition('fade');
                 });
+
+           /* var data = $("#form1").serialize();
+            $("#cs").click(function () {
+                $.util.ajaxPost("正在测试", "/sign/cs", data, function (respData) {
+                    if (respData.flag == 1) {
+                        $.layer.alertSuccess(respData.msg);
+                    }
+                })
+            })*/
         </script>
     </body>
 </html>

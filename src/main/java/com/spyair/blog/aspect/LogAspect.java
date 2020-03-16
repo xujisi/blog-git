@@ -31,6 +31,8 @@ public class LogAspect {
     //在切面 前执行
     @Before("log()")
     public void doBefore(JoinPoint joinPoint) {
+        logger.info("-----------------------Start------------------------");
+        logger.info("-----------------------doBefore------------------------");
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         String url = request.getRequestURL().toString();
@@ -51,6 +53,7 @@ public class LogAspect {
     public void doAfterRuturn(Object result)
     {
         logger.info("Result :{}", result);
+        logger.info("-----------------------End------------------------");
     }
 
     private class RequestLog {

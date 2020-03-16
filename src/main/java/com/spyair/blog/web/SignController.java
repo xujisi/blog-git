@@ -4,6 +4,7 @@ import com.spyair.blog.po.Sign;
 import com.spyair.blog.po.User;
 import com.spyair.blog.service.SignService;
 import com.spyair.blog.service.UserService;
+import com.spyair.blog.util.JsonUtil;
 import com.spyair.blog.util.TimeHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,20 +15,22 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import static com.spyair.blog.util.XjsUtil.requestToMap;
 
 /**
  * @version V1.0
@@ -258,5 +261,18 @@ public class SignController {
         return fileList;
     }
 
-
+    //cs
+    /*@PostMapping("/sign/cs")
+    @ResponseBody
+    public void cs(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+        Map paraMap = requestToMap(request);
+        Map returnMap = new HashMap();
+        returnMap.put("flag", "1");
+        returnMap.put("msg", paraMap.get("abc"));
+        try {
+            JsonUtil.getAjaxResult(response, returnMap);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }*/
 }
