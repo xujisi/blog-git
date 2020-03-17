@@ -1,0 +1,550 @@
+2020-03-15 23:15:43.385  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 16380 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-03-15 23:15:43.394 DEBUG 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-15 23:15:43.394  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-03-15 23:15:43.449  INFO 16380 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\apache-maven-3.3.9\respository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-15 23:15:43.449  INFO 16380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-15 23:15:43.449  INFO 16380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-15 23:15:45.202  INFO 16380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 23:15:45.322  INFO 16380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110ms. Found 6 JPA repository interfaces.
+2020-03-15 23:15:45.719  INFO 16380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 23:15:46.250  INFO 16380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-15 23:15:46.295  INFO 16380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 23:15:46.295  INFO 16380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 23:15:46.425  INFO 16380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 23:15:46.426  INFO 16380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2977 ms
+2020-03-15 23:15:46.670  INFO 16380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-15 23:15:46.769  INFO 16380 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-15 23:15:47.008  INFO 16380 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-15 23:15:47.149  INFO 16380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 23:15:47.366  INFO 16380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 23:15:47.394  INFO 16380 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-03-15 23:15:48.466  INFO 16380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-15 23:15:48.472  INFO 16380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:15:48.501  INFO 16380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 23:15:49.390  WARN 16380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 23:15:49.573  INFO 16380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:15:49.822  INFO 16380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 23:15:50.297  INFO 16380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-15 23:15:50.299  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 7.63 seconds (JVM running for 11.387)
+2020-03-15 23:15:54.447  INFO 16380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 23:15:54.448  INFO 16380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 23:15:54.460  INFO 16380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-03-15 23:16:01.103  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:01.104  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:01.106  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:01.139  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:01.139  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:01.139  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:04.454  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:04.455  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:04.455  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign;jsessionid=31254F8E1CB379BDCF7F4D0E584F029C', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@50cc092c, org.apache.catalina.connector.RequestFacade@11e81820]}
+2020-03-15 23:16:04.490  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:04.490  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:16:04.490  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:04.855  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:04.856  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:04.856  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:04.859  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:04.859  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:04.859  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:06.398  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:06.398  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:06.398  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/67/view', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.view', args=[67, {}]}
+2020-03-15 23:16:06.409  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:06.409  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :sign-view
+2020-03-15 23:16:06.409  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:06.763  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:06.763  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:06.763  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:06.767  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:06.767  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:06.767  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:08.923  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:08.923  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:08.923  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/67/input', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.editInput', args=[67, {}]}
+2020-03-15 23:16:08.926  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:08.927  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :/sign-input
+2020-03-15 23:16:08.927  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:09.192  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:09.192  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:09.192  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:09.196  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:09.197  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:09.197  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:11.396  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:11.396  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:11.396  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/67/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[67, {}]}
+2020-03-15 23:16:11.397  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:11.397  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:11.397  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:11.629  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:11.629  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:11.629  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:11.634  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:11.634  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:11.634  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:13.171  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:13.171  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:13.172  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/62/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[62, {}]}
+2020-03-15 23:16:13.274  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:13.274  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:13.274  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:13.507  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:13.507  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:13.507  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:13.511  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:13.512  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:13.512  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:15.391  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:15.391  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:15.391  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/61/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[61, {}]}
+2020-03-15 23:16:15.391  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:15.392  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:15.392  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:15.625  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:15.625  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:15.625  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:15.630  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:15.630  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:15.630  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:17.075  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:17.077  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:17.077  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/57/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[57, {}]}
+2020-03-15 23:16:17.077  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:17.077  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:17.077  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:17.292  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:17.292  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:17.292  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:17.296  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:17.296  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:17.296  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:22.356  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:22.356  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:22.356  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/67/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[67, {}]}
+2020-03-15 23:16:22.356  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:22.357  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:22.357  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:22.579  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:22.579  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:22.580  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:22.583  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:22.583  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:22.583  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:24.183  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:24.183  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:24.184  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/66/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[66, {}]}
+2020-03-15 23:16:24.184  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:24.184  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:24.184  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:24.395  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:24.395  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:24.396  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:24.401  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:24.401  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:24.401  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:25.679  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:25.679  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:25.680  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign/62/upload', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.upload', args=[62, {}]}
+2020-03-15 23:16:25.680  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:25.680  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :sign-upload
+2020-03-15 23:16:25.680  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:25.894  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:25.894  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:25.894  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:25.899  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:25.899  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:25.899  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:30.929  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:30.929  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:30.930  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.ArchivesShowController.archives', args=[{}]}
+2020-03-15 23:16:30.945  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:30.945  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :archives
+2020-03-15 23:16:30.945  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:31.289  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:31.289  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:31.289  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:31.292  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:31.292  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:31.292  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:31.915  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:31.916  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:31.916  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-03-15 23:16:31.923  WARN 16380 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-15 23:16:31.947  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:31.947  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :tags
+2020-03-15 23:16:31.947  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:32.224  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:32.224  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:32.224  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:32.227  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:32.227  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:32.227  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:33.786  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:33.786  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:33.786  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-03-15 23:16:33.792  WARN 16380 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-03-15 23:16:33.802  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:33.802  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :types
+2020-03-15 23:16:33.802  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:34.156  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:34.156  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:34.157  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:34.160  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:34.160  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:34.160  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:35.127  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:35.128  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:35.128  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-03-15 23:16:35.135  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:35.136  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-03-15 23:16:35.136  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:35.512  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:35.513  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:35.513  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:35.516  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:35.516  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:35.516  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:47.391  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:47.391  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:47.391  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.AboutShowController.About', args=[]}
+2020-03-15 23:16:47.394  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:47.394  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :about
+2020-03-15 23:16:47.394  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:47.647  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:47.647  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:47.647  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:47.651  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:47.651  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:47.651  INFO 16380 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:48.851  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:48.851  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:48.851  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@50cc092c, org.apache.catalina.connector.RequestFacade@c3ae520]}
+2020-03-15 23:16:48.856  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:48.856  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:16:48.856  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:49.081  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:49.081  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:49.081  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:49.085  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:49.085  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:49.085  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:49.701  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:49.701  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:49.701  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.ArchivesShowController.archives', args=[{}]}
+2020-03-15 23:16:49.707  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:49.707  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :archives
+2020-03-15 23:16:49.707  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:49.946  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:49.946  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:49.946  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:49.951  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:49.951  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:49.951  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:50.234  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:50.235  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:50.235  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-03-15 23:16:50.240  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:50.240  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : Result :tags
+2020-03-15 23:16:50.240  INFO 16380 --- [http-nio-8080-exec-8] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:50.483  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:50.483  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:50.483  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:50.487  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:50.487  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:50.487  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:50.659  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:50.659  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:50.659  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-03-15 23:16:50.664  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:50.664  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :types
+2020-03-15 23:16:50.664  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:50.929  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:50.929  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:50.929  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-03-15 23:16:50.936  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:50.936  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :index
+2020-03-15 23:16:50.936  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:51.245  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:51.245  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:51.245  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:51.248  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:51.248  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:51.248  INFO 16380 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:51.932  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:51.932  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:51.932  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/blog/60', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.blog', args=[60, {}]}
+2020-03-15 23:16:52.000  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:52.000  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :blog
+2020-03-15 23:16:52.000  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:52.280  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:52.281  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:52.281  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:16:52.284  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:52.284  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:16:52.284  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:16:52.342  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:16:52.342  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:16:52.342  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/comments/60', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.CommentConterller.comments', args=[60, {}]}
+2020-03-15 23:16:52.363  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:16:52.363  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :blog :: commentList
+2020-03-15 23:16:52.363  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:03.622  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:03.622  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:03.622  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-03-15 23:17:03.627  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:03.627  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :types
+2020-03-15 23:17:03.627  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:03.876  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:03.876  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:03.876  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:17:03.879  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:03.879  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:17:03.879  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:04.531  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:04.531  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:04.531  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@50cc092c, org.apache.catalina.connector.RequestFacade@c3ae520]}
+2020-03-15 23:17:04.536  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:04.536  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:17:04.536  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:04.710  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:04.710  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:04.711  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:17:04.713  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:04.713  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:17:04.713  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:08.163  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:08.163  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:08.163  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@50cc092c, org.apache.catalina.connector.RequestFacade@65fb872d]}
+2020-03-15 23:17:08.167  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:08.167  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:17:08.167  INFO 16380 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:08.404  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:08.404  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:08.404  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:17:08.407  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:08.407  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:17:08.407  INFO 16380 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:11.155  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:11.155  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:11.155  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@50cc092c, org.apache.catalina.connector.RequestFacade@11e81820]}
+2020-03-15 23:17:11.159  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:11.159  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:17:11.160  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:17:11.382  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:17:11.382  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:17:11.383  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:17:11.385  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:17:11.385  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:17:11.385  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:04.946  INFO 16380 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:25:04.948  INFO 16380 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:25:04.952  INFO 16380 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 23:25:04.958  INFO 16380 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 23:25:05.986  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 16380 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-03-15 23:25:05.986 DEBUG 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-15 23:25:05.986  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-03-15 23:25:06.238  INFO 16380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 23:25:06.268  INFO 16380 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 6 JPA repository interfaces.
+2020-03-15 23:25:06.336  INFO 16380 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 23:25:06.408  WARN 16380 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-15 23:25:06.473  INFO 16380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-15 23:25:06.474  INFO 16380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 23:25:06.474  INFO 16380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 23:25:06.495  INFO 16380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 23:25:06.495  INFO 16380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 504 ms
+2020-03-15 23:25:06.554  INFO 16380 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-15 23:25:06.557  INFO 16380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-03-15 23:25:06.561  INFO 16380 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-03-15 23:25:06.561  INFO 16380 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-03-15 23:25:06.700  INFO 16380 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-15 23:25:06.701  INFO 16380 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:25:06.714  INFO 16380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 23:25:07.092  WARN 16380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 23:25:07.205  INFO 16380 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:25:07.243  INFO 16380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 23:25:07.453  INFO 16380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-15 23:25:07.453  INFO 16380 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 1.514 seconds (JVM running for 568.541)
+2020-03-15 23:25:07.455  INFO 16380 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-15 23:25:09.699  INFO 16380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 23:25:09.700  INFO 16380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 23:25:09.707  INFO 16380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-03-15 23:25:09.710  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:09.710  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:09.711  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@5f1ab3be, org.apache.catalina.connector.RequestFacade@d7d7a47]}
+2020-03-15 23:25:09.714  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:09.714  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :admin/login
+2020-03-15 23:25:09.714  INFO 16380 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:14.228  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:14.229  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:14.229  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:25:14.237  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:14.237  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:25:14.237  INFO 16380 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:16.117  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:16.118  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:16.118  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@5f1ab3be, org.apache.catalina.connector.RequestFacade@467ea58b]}
+2020-03-15 23:25:16.127  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:16.127  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:25:16.127  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:16.336  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:16.336  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:16.336  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:25:16.340  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:16.340  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:25:16.340  INFO 16380 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:40.288  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:40.288  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:40.288  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@5f1ab3be, org.apache.catalina.connector.RequestFacade@3f825360]}
+2020-03-15 23:25:40.291  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:40.291  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:25:40.291  INFO 16380 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:40.644  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:25:40.645  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:25:40.645  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:25:40.647  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:25:40.647  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:25:40.647  INFO 16380 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:25:52.405  INFO 16380 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:25:52.407  INFO 16380 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:25:52.408  INFO 16380 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-03-15 23:25:52.415  INFO 16380 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-03-15 23:26:11.022  INFO 18408 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 18408 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-03-15 23:26:11.025 DEBUG 18408 --- [restartedMain] com.spyair.blog.BlogApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-15 23:26:11.025  INFO 18408 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: dev
+2020-03-15 23:26:11.065  INFO 18408 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in D:\maven\apache-maven-3.3.9\respository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/maven/apache-maven-3.3.9/respository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-03-15 23:26:11.066  INFO 18408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-15 23:26:11.066  INFO 18408 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-15 23:26:11.594  INFO 18408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-15 23:26:11.671  INFO 18408 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 6 JPA repository interfaces.
+2020-03-15 23:26:11.943  INFO 18408 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-15 23:26:12.376  INFO 18408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-15 23:26:12.383  INFO 18408 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 23:26:12.383  INFO 18408 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 23:26:12.507  INFO 18408 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 23:26:12.507  INFO 18408 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1441 ms
+2020-03-15 23:26:12.659  INFO 18408 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-15 23:26:12.715  INFO 18408 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-15 23:26:12.812  INFO 18408 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-15 23:26:12.891  INFO 18408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 23:26:12.980  INFO 18408 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 23:26:12.995  INFO 18408 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-03-15 23:26:13.663  INFO 18408 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-15 23:26:13.669  INFO 18408 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-15 23:26:13.689  INFO 18408 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 23:26:14.440  WARN 18408 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-15 23:26:14.643  INFO 18408 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 23:26:14.879  INFO 18408 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 23:26:15.122  INFO 18408 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-15 23:26:15.124  INFO 18408 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 4.65 seconds (JVM running for 6.098)
+2020-03-15 23:26:15.284  INFO 18408 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 23:26:15.284  INFO 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 23:26:15.295  INFO 18408 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-03-15 23:26:15.322  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:15.322  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:15.324  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@58da3f11]}
+2020-03-15 23:26:15.329  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:15.329  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :admin/login
+2020-03-15 23:26:15.329  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:26:18.930  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:18.930  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:18.930  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:26:18.959  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:18.960  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:26:18.960  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:26:19.745  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:19.746  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:19.746  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@409e5651]}
+2020-03-15 23:26:19.773  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:19.773  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:26:19.773  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:26:20.097  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:20.097  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:20.097  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:26:20.103  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:20.103  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:26:20.103  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:26:23.098  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:23.098  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:23.098  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='127.0.0.1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@8715e3d]}
+2020-03-15 23:26:23.112  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:23.112  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:26:23.112  INFO 18408 --- [http-nio-8080-exec-6] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:26:23.412  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:26:23.412  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:26:23.412  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:26:23.416  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:26:23.416  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:26:23.416  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:27:13.503  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:27:13.504  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:27:13.504  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@8715e3d]}
+2020-03-15 23:27:13.511  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:27:13.511  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:27:13.511  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:27:13.791  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:27:13.791  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:27:13.791  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:27:13.797  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:27:13.797  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:27:13.797  INFO 18408 --- [http-nio-8080-exec-3] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:27:14.506  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:27:14.506  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:27:14.507  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@3f88f6fe]}
+2020-03-15 23:27:14.512  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:27:14.512  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:27:14.512  INFO 18408 --- [http-nio-8080-exec-4] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:27:14.763  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:27:14.763  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:27:14.763  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:27:14.767  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:27:14.767  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:27:14.767  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:10.466  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:10.467  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:10.467  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@26b9aa12]}
+2020-03-15 23:28:10.473  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:10.473  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:28:10.473  INFO 18408 --- [http-nio-8080-exec-1] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:10.905  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:10.905  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:10.905  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:28:10.912  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:10.912  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:28:10.912  INFO 18408 --- [http-nio-8080-exec-2] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:11.592  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:11.592  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:11.592  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='127.0.0.1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@5db18b19]}
+2020-03-15 23:28:11.597  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:11.597  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:28:11.597  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:11.896  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:11.896  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:11.896  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:28:11.901  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:11.901  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:28:11.901  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:49.336  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:49.337  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:49.337  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@58da3f11]}
+2020-03-15 23:28:49.343  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:49.344  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:28:49.344  INFO 18408 --- [http-nio-8080-exec-10] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:49.821  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:49.821  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:49.821  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:28:49.827  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:49.827  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:28:49.827  INFO 18408 --- [http-nio-8080-exec-5] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:54.146  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:54.146  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:54.147  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/sign', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.SignController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}, org.apache.catalina.session.StandardSessionFacade@502a6117, org.apache.catalina.connector.RequestFacade@5db18b19]}
+2020-03-15 23:28:54.151  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:54.151  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : Result :sign
+2020-03-15 23:28:54.151  INFO 18408 --- [http-nio-8080-exec-9] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
+2020-03-15 23:28:54.394  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------Start------------------------
+2020-03-15 23:28:54.394  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doBefore------------------------
+2020-03-15 23:28:54.394  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.spyair.blog.web.IndexController.newBlogs', args=[{}]}
+2020-03-15 23:28:54.398  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------doAfter------------------------
+2020-03-15 23:28:54.398  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : Result :_fragments :: newblogList
+2020-03-15 23:28:54.398  INFO 18408 --- [http-nio-8080-exec-7] com.spyair.blog.aspect.LogAspect         : -----------------------End------------------------
