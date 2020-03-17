@@ -34,6 +34,6 @@ public interface SignService {
     Sign updateSign(Long id, Sign sign);
 
     //删除记录
-    void deleteSign(Long id);
+    int deleteSign(Long id);
 
 }

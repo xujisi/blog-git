@@ -4,7 +4,6 @@ import com.spyair.blog.po.Sign;
 import com.spyair.blog.po.User;
 import com.spyair.blog.service.SignService;
 import com.spyair.blog.service.UserService;
-import com.spyair.blog.util.JsonUtil;
 import com.spyair.blog.util.TimeHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -147,20 +146,6 @@ public class SignController {
         return "sign-view";
     }
 
-    //删除签到记录
-    @GetMapping("/sign/{id}/delete")
-    public String delete(@PathVariable Long id, RedirectAttributes attributes, HttpSession session) {
-        User user = (User) session.getAttribute("user");
-        String rand = user.getRand();
-        if (!rand.equals("admin")) {
-            attributes.addFlashAttribute("message", "当前用户权限无法执行删除操作！");
-            return "redirect:/sign";
-        }
-        signService.deleteSign(id);
-        attributes.addFlashAttribute("message", "删除成功");
-        return "redirect:/sign";
-    }
-
     //上传界面跳转
     @GetMapping("/sign/{id}/upload")
     public String upload(@PathVariable Long id, Model model) throws IllegalStateException, IOException {
@@ -261,18 +246,32 @@ public class SignController {
         return fileList;
     }
 
-    //cs
-    /*@PostMapping("/sign/cs")
+    //删除签到记录
+    @PostMapping("/sign/delete")
     @ResponseBody
-    public void cs(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
+    public Map delete(HttpServletRequest request, HttpSession session, HttpServletResponse response) {
+        //入参
         Map paraMap = requestToMap(request);
+        Long id = Long.parseLong((String) paraMap.get("id"));
+        //出参
         Map returnMap = new HashMap();
-        returnMap.put("flag", "1");
-        returnMap.put("msg", paraMap.get("abc"));
-        try {
-            JsonUtil.getAjaxResult(response, returnMap);
-        } catch (Exception e) {
-            e.printStackTrace();
+        //用户等级校验
+        User user = (User) session.getAttribute("user");
+        String rand = user.getRand();
+        if (!rand.equals("admin")) {
+            returnMap.put("flag", "-1");
+            returnMap.put("msg", "当前用户权限无法执行删除操作");
+            return returnMap;
         }
-    }*/
+        //删除操作
+        int result = signService.deleteSign(id);
+        if (result == 1) {
+            returnMap.put("msg", "删除成功");
+            returnMap.put("flag", "1");
+        } else {
+            returnMap.put("flag", "-1");
+            returnMap.put("msg", "删除失败");
+        }
+        return returnMap;
+    }
 }

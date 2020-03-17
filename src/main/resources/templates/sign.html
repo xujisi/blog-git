@@ -57,7 +57,7 @@
                     <p th:text="${message}">恭喜，操作成功！</p>
                 </div>
                 <div class="ui left labeled input">
-                    <a class="ui teal basic label" href="#" th:href="@{/sign}">查询</a>
+                    <a class="ui teal basic label selects" href="#" th:href="@{/sign}">查询</a>
                 </div>
                 <form th:id="form1" th:name="form1">
                     <table class="ui compact teal table">
@@ -80,7 +80,7 @@
                             <td>
                                 <a href="#" th:href="@{/sign/{id}/view(id=${sign.id})}" class="ui mini blue basic button">查看</a>
                                 <a href="#" th:href="@{/sign/{id}/input(id=${sign.id})}" class="ui mini teal basic button">编辑</a>
-                                <a href="#" th:href="@{/sign/{id}/delete(id=${sign.id})}" class="ui mini red basic button">删除</a>
+                                <a th:onclick="'javascript:deleteApply('+${sign.id}+')'" class="ui mini red basic button">删除</a>
                                 <a href="#" th:href="@{/sign/{id}/upload(id=${sign.id})}" class="ui mini orange basic button">上传图片</a>
                             </td>
                         </tr>
@@ -171,14 +171,22 @@
                         .transition('fade');
                 });
 
-           /* var data = $("#form1").serialize();
-            $("#cs").click(function () {
-                $.util.ajaxPost("正在测试", "/sign/cs", data, function (respData) {
-                    if (respData.flag == 1) {
-                        $.layer.alertSuccess(respData.msg);
-                    }
-                })
-            })*/
+            //删除操作（Ajax）
+            function deleteApply(id) {
+                $.layer.confirm("确定删除", function () {
+                    $.util.ajaxPost("正在删除", "/sign/delete?id=" + id, function (respData) {
+                        if (respData.flag == 1) {
+                            $.layer.alertSuccess(respData.msg, function () {
+                                window.location.href = "/sign"
+                            });
+                        }
+                        if (respData.flag == -1) {
+                            $.layer.alertFailure(respData.msg);
+                        }
+                    })
+                });
+            }
+
         </script>
     </body>
 </html>

@@ -168,20 +168,20 @@ $.layer = {
     },
 
     //confirm提示1
-    confirm: function (content, sureFuction, closeFunction) {
+    confirm: function (content, sureFunction, closeFunction) {
         layer.confirm(content, {
             icon: 3,
             resize: false
         }, function (index) {//确定回调
-            if (sureFuction) {
-                sureFuction();
+            if (sureFunction) {
+                sureFunction();
             }
-            layer.close(index);
+           // layer.close(index);
         }, function (index) {//cancel回调
             if (closeFunction) {
                 closeFunction();
             }
-            layer.close(index);
+           // layer.close(index);
         });
     },
 

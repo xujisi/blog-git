@@ -20,6 +20,11 @@ public class TimeHelper {
     private static SimpleDateFormat _dateFormat;
     private static Date _currentDate;
 
+    /**
+     * @Description:获取当前的系统时间格式为yyyyddmm
+     * @author: 许集思
+     * @date: 2020/3/2 0:50
+     */
     public static String date_yyyyddmm() {
         SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
         String nowDay = String.valueOf(Long.parseLong(df.format(System.currentTimeMillis())));

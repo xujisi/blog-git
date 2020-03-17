@@ -137,12 +137,14 @@ public class JsonUtil {
     }
 
     public static void getAjaxResult(HttpServletResponse response, Object object) throws Exception {
-        response.setContentType("text/html;charset=UTF-8");
-        response.setCharacterEncoding("UTF-8");
-        response.getWriter().print(toJSONObjectString(object));
+        try {
+            response.setContentType("text/html;charset=UTF-8");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().print(toJSONObjectString(object));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
-
-
 }
 
 

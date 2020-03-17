@@ -100,8 +100,8 @@ public class SignServiceImpl implements SignService {
     }
 
     @Override
-    public void deleteSign(Long id) {
-        signRepository.deleteSign(yxbz_wx, new Date(), id);
+    public int deleteSign(Long id) {
+        return signRepository.deleteSign(yxbz_wx, new Date(), id);
     }
 
 
