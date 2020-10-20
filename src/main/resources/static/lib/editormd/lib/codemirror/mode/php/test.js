@@ -52,13 +52,13 @@
      '[meta <?php] [comment /* Escaping */]',
      '[keyword echo] [string "aaa\\$aaaa->aaa.aaa"];',
      '[keyword echo] [string "aaa\\$aaaa[[2]]aaa.aaa"];',
-     '[keyword echo] [string "aaa\\$aaaa[[asd]]aaa.aaa"];',
+     '[keyword echo] [string "aaa\\$aaaa[[knn]]aaa.aaa"];',
      '[keyword echo] [string "aaa{\\$aaaa->aaa.aaa"];',
      '[keyword echo] [string "aaa{\\$aaaa[[2]]aaa.aaa"];',
-     '[keyword echo] [string "aaa{\\aaaaa[[asd]]aaa.aaa"];',
+     '[keyword echo] [string "aaa{\\aaaaa[[knn]]aaa.aaa"];',
      '[keyword echo] [string "aaa\\${aaaa->aaa.aaa"];',
      '[keyword echo] [string "aaa\\${aaaa[[2]]aaa.aaa"];',
-     '[keyword echo] [string "aaa\\${aaaa[[asd]]aaa.aaa"];',
+     '[keyword echo] [string "aaa\\${aaaa[[knn]]aaa.aaa"];',
      '[meta ?>]');
 
   MT('variable_interpolation_complex_syntax_1',
