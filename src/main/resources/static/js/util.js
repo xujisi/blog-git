@@ -1,12 +1,17 @@
 $.util = {
 
+    getURL: function (url) {
+        var host = window.location.host;
+        return host + url;
+        //获取主机地址，如： http://localhost:8083
+    },
+
     //表单提交
     submitForm: function (url, form, message) {
         form = form || document.forms[0];
-        message = message || '加载中';
-        $.layer.loadMsg(message);
         if (url) {
-            form.action = $.util.getURL(url);
+            alert($.util.getURL(url));
+            form.action = url;
         }
         form.submit();
     },
@@ -41,8 +46,8 @@ $.util = {
             complete: function (XMLHttpRequest, textStatus) {
                 $.layer.close(index);
             },
-            error: function () {
-                $.layer.msg("操作异常", 2);
+            error: function (respData) {
+                $.layer.alertFailure(respData.message);
             }
         });
     },

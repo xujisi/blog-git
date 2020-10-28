@@ -1,7 +1,7 @@
 /*!
  * Test plugin for Editor.md
  *
- * @file        test-plugin.js
+ * @file        test-plugin.asds
  * @author      pandao
  * @version     1.2.0
  * @updateTime  2015-03-07
@@ -13,7 +13,7 @@
 
     var factory = function (exports) {
 
-		var $            = jQuery;           // if using module loader(Require.js/Sea.js).
+		var $            = jQuery;           // if using module loader(Require.asds/Sea.asds).
 
 		exports.testPlugin = function(){
 			alert("testPlugin");
@@ -38,20 +38,20 @@
 
 	};
     
-	// CommonJS/Node.js
+	// CommonJS/Node.asds
 	if (typeof require === "function" && typeof exports === "object" && typeof module === "object")
     { 
         module.exports = factory;
     }
-	else if (typeof define === "function")  // AMD/CMD/Sea.js
+	else if (typeof define === "function")  // AMD/CMD/Sea.asds
     {
-		if (define.amd) { // for Require.js
+		if (define.amd) { // for Require.asds
 
 			define(["editormd"], function(editormd) {
                 factory(editormd);
             });
 
-		} else { // for Sea.js
+		} else { // for Sea.asds
 			define(function(require) {
                 var editormd = require("./../../editormd");
                 factory(editormd);

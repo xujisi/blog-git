@@ -1,7 +1,7 @@
 package com.spyair.blog.dao;
 
-import com.spyair.blog.po.Sign;
-import com.spyair.blog.po.User;
+import com.spyair.blog.entity.Sign;
+import com.spyair.blog.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head th:replace="_fragments :: head(~{::title})">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>商品管理上货</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+        <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+        <link rel="stylesheet" href="../../static/css/me.css">
+        <base target='_self'>
+    </head>
+    <body>
+
+        <!--导航-->
+        <nav th:replace="_fragments :: menu(7)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small"></nav>
+        <div class="ui attached pointing menu">
+            <div class="ui container">
+                <div class="right menu">
+                    <a href="#" th:href="@{/shopping/input}" class="teal active item">上货</a>
+                    <a href="#" th:href="@{/shopping}" class="item">计算</a>
+                </div>
+            </div>
+        </div>
+        <!--中间内容-->
+        <div class="m-container-small m-padded-tb-big">
+            <input type="hidden" name="page">
+            <div class="ui container">
+                <div class="ui secondary segment form">
+                    <div class="inline fields">
+                        <div class="field">
+                            <input type="text" name="goodsName" placeholder="商品名">
+                        </div>
+                        <div class="field">
+                            <div class="ui labeled action input">
+                                <div class="ui type selection dropdown">
+                                    <input type="hidden" name="status">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text">有效商品标志</div>
+                                    <div class="menu">
+                                        <div class="item" data-value=""></div>
+                                        <div class="item" data-value="-1">无效商品</div>
+                                        <div class="item" data-value="0">有效商品</div>
+                                    </div>
+                                </div>
+                                <button id="clear-btn" class="ui compact button">clear</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="table-container">
+                    <table th:fragment="goodsList" class="ui compact teal table">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>商品名称</th>
+                            <th>成本</th>
+                            <th>描述</th>
+                            <th>有效标志</th>
+                            <th>最近修改时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="goods,iterStat : ${page.content}">
+                            <td th:text="${iterStat.count}"></td>
+                            <td th:text="${goods.goodsName}"></td>
+                            <td th:text="${goods.cost}+' 元'"></td>
+                            <td th:text="${goods.descripe}"></td>
+                            <td th:text="${goods.status}==0? '有效':'无效'"></td>
+                            <td th:text="${goods.updateTime}"></td>
+                            <td>
+                                <a href="#" th:href="@{/shopping/{id}/view(id=${goods.id})}" class="ui mini blue basic button">查看</a>
+                                <a href="#" th:href="@{/shopping/{id}/edit(id=${goods.id})}" class="ui mini teal basic button">编辑</a>
+                                <a th:data-id="${goods.id}" class="ui mini red basic button delete">无效化</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th colspan="7">
+                                <div class="ui mini pagination menu" th:if="${page.totalPages}>1">
+                                    <a onclick="page(this)" th:attr="data-page=0" class="item">首页</a>
+                                    <a onclick="page(this)" th:attr="data-page=${page.number}-1" class="item" th:unless="${page.first}">上一页</a>
+                                    <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
+                                    <a onclick="page(this)" th:attr="data-page=${page.getTotalPages()-1}" class="item">尾页</a>
+                                </div>
+                                <a class="item" th:text="第+${page.getNumber()+1}+页，共+${page.getTotalPages()}+页"></a>
+                                <a href="#" th:href="@{/shopping/add}" class="ui mini right floated teal basic button">新增</a>
+                            </th>
+                        </tr>
+                        </tfoot>
+                    </table>
+
+                    <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+                        <i class="close icon"></i>
+                        <div class="header">提示：</div>
+                        <p th:text="${message}">恭喜，操作成功！</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--底部footer-->
+        <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive"></footer>
+        <th:block th:replace="_fragments :: script"></th:block>
+        <script th:src="@{/js/shopping_js/shopping-input.js}"></script>
+
+
+    </body>
+</html>

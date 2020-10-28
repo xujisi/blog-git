@@ -1,7 +1,7 @@
 package com.spyair.blog.service;
 
-import com.spyair.blog.po.Sign;
-import com.spyair.blog.po.User;
+import com.spyair.blog.entity.Sign;
+import com.spyair.blog.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

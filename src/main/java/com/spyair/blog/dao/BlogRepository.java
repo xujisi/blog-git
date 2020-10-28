@@ -1,6 +1,6 @@
 package com.spyair.blog.dao;
 
-import com.spyair.blog.po.Blog;
+import com.spyair.blog.entity.Blog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

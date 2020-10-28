@@ -1,6 +1,6 @@
 package com.spyair.blog.service;
 
-import com.spyair.blog.po.User;
+import com.spyair.blog.entity.User;
 
 /**
  * @version V1.0

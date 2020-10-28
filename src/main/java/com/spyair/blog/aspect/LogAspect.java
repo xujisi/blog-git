@@ -23,7 +23,7 @@ public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     //只在web项目中的controller写日志
-    @Pointcut("execution(* com.spyair.blog.web.*.*(..))")
+    @Pointcut("execution(* com.spyair.blog.controller.*.*(..))")
     public void log() {
 
     }

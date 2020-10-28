@@ -1,6 +1,6 @@
 package com.spyair.blog.dao;
 
-import com.spyair.blog.po.Comment;
+import com.spyair.blog.entity.Comment;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,6 +1,6 @@
 package com.spyair.blog.service;
 
-import com.spyair.blog.po.Comment;
+import com.spyair.blog.entity.Comment;
 
 import java.util.List;
 

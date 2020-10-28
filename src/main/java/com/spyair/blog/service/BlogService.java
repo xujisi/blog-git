@@ -1,6 +1,6 @@
 package com.spyair.blog.service;
 
-import com.spyair.blog.po.Blog;
+import com.spyair.blog.entity.Blog;
 import com.spyair.blog.vo.BlogQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

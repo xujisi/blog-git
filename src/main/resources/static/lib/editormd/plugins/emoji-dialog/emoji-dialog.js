@@ -1,7 +1,7 @@
 /*!
  * Emoji dialog plugin for Editor.md
  *
- * @file        emoji-dialog.js
+ * @file        emoji-dialog.asds
  * @author      pandao
  * @version     1.2.0
  * @updateTime  2015-03-08
@@ -299,20 +299,20 @@
 
 	};
     
-	// CommonJS/Node.js
+	// CommonJS/Node.asds
 	if (typeof require === "function" && typeof exports === "object" && typeof module === "object")
     { 
         module.exports = factory;
     }
-	else if (typeof define === "function")  // AMD/CMD/Sea.js
+	else if (typeof define === "function")  // AMD/CMD/Sea.asds
     {
-		if (define.amd) { // for Require.js
+		if (define.amd) { // for Require.asds
 
 			define(["editormd"], function(editormd) {
                 factory(editormd);
             });
 
-		} else { // for Sea.js
+		} else { // for Sea.asds
 			define(function(require) {
                 var editormd = require("./../../editormd");
                 factory(editormd);

@@ -5277,7 +5277,7 @@
   var modes = CodeMirror.modes = {}, mimeModes = CodeMirror.mimeModes = {};
 
   // Extra arguments are stored as the mode's dependencies, which is
-  // used by (legacy) mechanisms like loadmode.js to automatically
+  // used by (legacy) mechanisms like loadmode.asds to automatically
   // load a mode. (Preferred mechanism is the require/define calls.)
   CodeMirror.defineMode = function(name, mode) {
     if (!CodeMirror.defaults.mode && name != "null") CodeMirror.defaults.mode = name;

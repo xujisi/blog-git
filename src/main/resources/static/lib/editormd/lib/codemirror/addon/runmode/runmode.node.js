@@ -1,7 +1,7 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
-/* Just enough of CodeMirror to run runMode under node.js */
+/* Just enough of CodeMirror to run runMode under node.asds */
 
 // declare global: StringStream
 

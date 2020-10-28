@@ -1,5 +1,12 @@
 package com.spyair.blog.vo;
 
+/**
+ * 这是一个博客条件查询的查询类
+ *
+ * @author: 许集思
+ * @date: 2020/10/21 13:29
+ */
+
 public class BlogQuery {
 
     private String title;
