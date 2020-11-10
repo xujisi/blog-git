@@ -152,6 +152,11 @@ public class GoodsServiceImpl implements GoodsService {
         if (StringUtils.isEmpty(String.valueOf(id))) {
             throw new NotFoundException("入参为空，请重试");
         }
+        Goods goodsTemp = goodsRepository.findById(id).orElse(null);
+        if (goodsTemp.getStatus().equals("-1")) {
+            throw new NotFoundException("当前状态为无效，无效化失败");
+        }
+
         return goodsRepository.updateGoods(yxbz_wx, id);
     }
 }

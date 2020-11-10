@@ -5,17 +5,24 @@ import com.spyair.blog.entity.Result;
 import com.spyair.blog.entity.StatusCode;
 import com.spyair.blog.entity.User;
 import com.spyair.blog.service.GoodsService;
+import com.spyair.blog.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Map;
 
 import static com.spyair.blog.util.XjsUtil.requestToMap;
@@ -207,6 +214,10 @@ public class ShoppingController {
         return new Result(true, StatusCode.OK, "无效化成功");
     }
 
-
+    @GetMapping("/downloadExcel")
+    @ResponseBody
+    public void downTemplate(HttpServletResponse response) {
+        new FileUtil().downloadExcel(response, "testModel.xlsx", "modelExcel.xlsx");
+    }
 }
 

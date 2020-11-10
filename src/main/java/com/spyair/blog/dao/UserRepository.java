@@ -8,4 +8,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     //JPA内部方法，可以查询数据库 ，命名规则要规范
     User findByUsernameAndPassword(String username, String password);
+
+    User findByUsername(String username);
 }

@@ -47,6 +47,7 @@
                         </div>
                         <div class="field">
                             <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                            <button type="button" id="upload-btn" class="ui mini orange basic button"><i class="file icon"></i>上传</button>
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
                             <td>
                                 <a href="#" th:href="@{/shopping/{id}/view(id=${goods.id})}" class="ui mini blue basic button">查看</a>
                                 <a href="#" th:href="@{/shopping/{id}/edit(id=${goods.id})}" class="ui mini teal basic button">编辑</a>
-                                <a th:data-id="${goods.id}" class="ui mini red basic button delete">无效化</a>
+                                <a th:data-id="${goods.id}" onclick="deleteBtn(this)" class="ui mini red basic button">无效化</a>
                             </td>
                         </tr>
                         </tbody>
@@ -87,7 +88,7 @@
                                     <a onclick="page(this)" th:attr="data-page=${page.number}+1" class="item" th:unless="${page.last}">下一页</a>
                                     <a onclick="page(this)" th:attr="data-page=${page.getTotalPages()-1}" class="item">尾页</a>
                                 </div>
-                                <a class="item" th:text="第+${page.getNumber()+1}+页，共+${page.getTotalPages()}+页"></a>
+                                <a class="item" style="color: black" th:text="第+${page.getNumber()+1}+页，共+${page.getTotalPages()}+页"></a>
                                 <a href="#" th:href="@{/shopping/add}" class="ui mini right floated teal basic button">新增</a>
                             </th>
                         </tr>
@@ -99,10 +100,49 @@
                         <div class="header">提示：</div>
                         <p th:text="${message}">恭喜，操作成功！</p>
                     </div>
-
                 </div>
-
             </div>
+        </div>
+
+        <!--隐藏域-->
+        <div id="hiddenDiv" style="display: none;" class="m-container-small m-padded-tb-big">
+            <div class="ui container ">
+                <form action="#" method="post" th:id="addimages" th:action="@{/shopping/upload}" enctype="multipart/form-data" class="ui form">
+                    <div class="m-container ">
+                        <input type="hidden" name="id" th:value="*{id}">
+                        <input type="file" th:name="files" hidden multiple th:id="files"/>
+                        <input type="submit" th:id="submits" hidden/>
+                        <br/>
+                        <br/>
+                        <div style="margin-left: 40px;">
+                            <div class="field">
+                                <a class="ui small blue button" onclick="location.href='/shopping/downloadExcel'" th:id="download">下载模板</a>
+                                <a class="ui small button" th:id="reset">重置</a>
+                            </div>
+                        </div>
+                        <div class="m-margin-top-small" style="margin-left: 40px;">
+                            <div class="ui action left icon input" style="width: 320px;">
+                                <i class="upload icon"></i><input class="excelName" type="text" placeholder="请选择需要上传的excel文件"/>
+                            </div>
+                            <div class="ui blue button small" th:id="add">
+                                <i class="upload icon"></i>添加
+                            </div>
+                            <div class="m-margin-top-small" style="margin-left: 135px;">
+                                <div class="field">
+                                    <button class="ui blue button small" th:id="upload">上传</button>
+                                    <button class="ui button small" th:id="close">关闭</button>
+                                </div>
+                            </div>
+                            <div class="ui ordered listf"></div>
+                            <div class="ui small images">
+                                <img class="ui medium bordered m-black small image" th:each="fileone : ${fileNameLists}" th:src="@{/images/{id}/{fileone}(id=${fid},fileone=${fileone})}">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
         </div>
 
         <!--底部footer-->

@@ -1,5 +1,160 @@
-2020-01-13 22:33:10.300  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 25864 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
-2020-01-13 22:33:10.302  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
-2020-01-13 22:33:11.747  WARN 25864 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-01-13 22:33:11.900  WARN 25864 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-01-13 22:33:11.976  INFO 25864 --- [restartedMain] com.spyair.blog.BlogApplication          : Started BlogApplication in 2.073 seconds (JVM running for 3.175)
+2020-11-10 15:00:34.535  INFO 20632 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 20632 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 15:00:34.539  INFO 20632 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 15:00:41.691  WARN 20632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 15:00:42.735  INFO 20632 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 8.962 seconds (JVM running for 10.645)
+2020-11-10 15:32:28.291  INFO 8348 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 8348 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 15:32:28.292  INFO 8348 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 15:32:34.796  WARN 8348 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 15:32:35.762  INFO 8348 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 7.926 seconds (JVM running for 9.004)
+2020-11-10 15:37:16.960  INFO 10308 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 10308 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 15:37:16.961  INFO 10308 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 15:37:23.131  WARN 10308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 15:37:24.074  INFO 10308 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 7.532 seconds (JVM running for 8.433)
+2020-11-10 15:40:09.686  INFO 12236 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 12236 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 15:40:09.687  INFO 12236 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 15:40:15.571  WARN 12236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 15:40:16.416  INFO 12236 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 7.125 seconds (JVM running for 8.072)
+2020-11-10 16:28:55.183  INFO 13364 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 13364 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 16:28:55.187  INFO 13364 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 16:29:01.082  WARN 13364 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 16:29:01.854 ERROR 13364 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 20:42:12.204  INFO 19304 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 19304 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 20:42:12.204  INFO 19304 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 20:42:12.859  WARN 19304 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-11-10 20:42:14.963  WARN 19304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 20:42:15.461  INFO 5952 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 5952 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 20:42:15.464  INFO 5952 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 20:42:15.724 ERROR 19304 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 20:42:22.195  WARN 5952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 20:42:23.454  INFO 5952 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 8.519 seconds (JVM running for 9.617)
+2020-11-10 21:50:11.414  INFO 19304 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 19304 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 21:50:11.414  INFO 19304 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 21:50:12.410  WARN 19304 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-11-10 21:50:13.976  WARN 19304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:50:14.713 ERROR 19304 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 21:50:39.806  INFO 23508 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 23508 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 21:50:39.810  INFO 23508 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 21:50:46.629  WARN 23508 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:50:47.295 ERROR 23508 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 21:53:00.525  INFO 21124 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 21124 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 21:53:00.526  INFO 21124 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 21:53:00.784  WARN 21124 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-11-10 21:53:02.057  WARN 21124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:53:02.365 ERROR 21124 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 21:53:06.566  INFO 21124 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 21124 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 21:53:06.566  INFO 21124 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 21:53:07.099  WARN 21124 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-11-10 21:53:08.233  WARN 21124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:53:09.095 ERROR 21124 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 21:53:09.995  INFO 5588 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 5588 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 21:53:09.996  INFO 5588 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 21:53:19.875  WARN 5588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 21:53:21.604  INFO 5588 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 12.226 seconds (JVM running for 13.565)
+2020-11-10 22:08:32.924  INFO 10476 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 10476 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 22:08:32.926  INFO 10476 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 22:08:41.649  WARN 10476 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 22:08:43.053  INFO 10476 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 10.919 seconds (JVM running for 12.38)
+2020-11-10 22:28:43.724  INFO 17252 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 17252 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 22:28:43.725  INFO 17252 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 22:28:52.495  WARN 17252 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 22:28:53.937  INFO 17252 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 10.918 seconds (JVM running for 12.297)
+2020-11-10 22:58:04.140  INFO 19724 --- [restartedMain] com.spyair.blog.BlogApplication          : Starting BlogApplication on LAPTOP-UCNAP6TA with PID 19724 (D:\Blog\target\classes started by Spy_ai_xjs in D:\Blog)
+2020-11-10 22:58:04.140  INFO 19724 --- [restartedMain] com.spyair.blog.BlogApplication          : The following profiles are active: pro
+2020-11-10 22:58:05.073  WARN 19724 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-11-10 22:58:07.004  WARN 19724 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 22:58:07.639 ERROR 19724 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2020-11-10 22:58:09.632  INFO 21684 --- [main] com.spyair.blog.BlogApplicationTests     : Starting BlogApplicationTests on LAPTOP-UCNAP6TA with PID 21684 (started by Spy_ai_xjs in D:\Blog)
+2020-11-10 22:58:09.634  INFO 21684 --- [main] com.spyair.blog.BlogApplicationTests     : The following profiles are active: pro
+2020-11-10 22:58:19.386  WARN 21684 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-10 22:58:21.047  INFO 21684 --- [main] com.spyair.blog.BlogApplicationTests     : Started BlogApplicationTests in 12.134 seconds (JVM running for 13.678)

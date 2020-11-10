@@ -33,6 +33,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User checkUser(String username) {
+        User user = userRepository.findByUsername(username);
+        return user;    }
+
+    @Override
     public User saveUser(String username, String password) {
         User user = new User();
         user.setAvatar("/images/avatar.png");

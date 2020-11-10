@@ -224,7 +224,7 @@ $.layer = {
             content: content,
             type: 1,
             resize: false,
-            area: [width, height]
+            area: [width, height],
         });
     },
     /*//打开Iframe窗口
